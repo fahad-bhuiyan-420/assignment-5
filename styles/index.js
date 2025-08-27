@@ -64,5 +64,8 @@ for (const copy of copies){
         e.preventDefault();
         copyCount += 1;
         document.getElementById('copy-count').innerText = copyCount;
+        const copiedText = copy.parentNode.getElementsByTagName('h3')[0].innerText;
+        navigator.clipboard.writeText(copiedText);
+
     })
 }
