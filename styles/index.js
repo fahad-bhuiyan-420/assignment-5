@@ -71,3 +71,8 @@ for (const copy of copies){
 
     })
 }
+
+document.getElementById('clear-btn').addEventListener('click', function(){
+    console.log('clear');
+    document.getElementById('call-history').innerHTML = "";
+})
